@@ -10,7 +10,7 @@ while True:
     socket_cliente.send(mensaje.encode("utf-8"))
 
     recibido = socket_cliente.recv(1024)
-    print ("Recibido: ", recibido)
+    print ("Recibido: ", recibido.decode())
     
 
 print("adios")
